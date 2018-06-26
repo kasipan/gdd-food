@@ -88,9 +88,9 @@ void sendDemoMessage() {
   PostRequest post = new PostRequest("https://api.line.me/v2/bot/message/push");
   //PostRequest post = new PostRequest("https://demo-ee.webscript.io/lineTest");
   post.addHeader("Content-Type", "application/json");
-  post.addHeader("Authorization", "");
+  post.addHeader("Authorization", "Bearer XXXXXXXXX");
   post.addJson(
-    "{\"to\":\"\"," +
+    "{\"to\":\"XXXXXXX\"," +
     "\"messages\":"+ messageData + 
     "}"
   );
